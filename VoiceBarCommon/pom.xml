@@ -11,7 +11,14 @@
     <groupId>VoiceBar</groupId>
     <version>1.0-SNAPSHOT</version>
     <artifactId>VoiceBarCommon</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.3.1</version>
+        </dependency>
 
+    </dependencies>
 
 
 </project>
