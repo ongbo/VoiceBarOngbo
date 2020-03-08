@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.voicebar.Entity.DubLike;
 import com.voicebar.Entity.KafkaEvent;
 import com.voicebar.Util.HbaseUtil;
+import com.voicebar.Util.MapUtil;
 import com.voicebar.log.ScanDubWork;
 import org.apache.commons.lang.StringUtils;
 import org.apache.flink.api.common.functions.FlatMapFunction;
@@ -19,7 +20,7 @@ import java.util.Map;
  * */
 public class DubLikeMap implements FlatMapFunction<KafkaEvent, DubLike> {
 
-    @Override
+
     public void flatMap(KafkaEvent value, Collector<DubLike> out) throws Exception {
         /**
          * 获取kafkaevent的事件数据
@@ -48,12 +49,11 @@ public class DubLikeMap implements FlatMapFunction<KafkaEvent, DubLike> {
         String mapdata = HbaseUtil.getdata(tablename, rowkey, familyname, column);
 
         Map<String ,Long> map = new HashMap<String,Long>();
-        if(StringUtils.isBlank(mapdata)){
+        if(StringUtils.isNotBlank(mapdata)){
             map = JSONObject.parseObject(mapdata, Map.class);
         }
 
         //获取之前的偏好
-        String maxprelike = M
 
     }
 }

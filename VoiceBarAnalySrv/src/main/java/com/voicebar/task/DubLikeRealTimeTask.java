@@ -47,7 +47,7 @@ public class DubLikeRealTimeTask {
         /**
          * 从kafka源读取消息
          * */
-        FlinkKafkaConsumerBase<KafkaEvent> kafkaEventFlinkKafkaConsumerBase = new FlinkKafkaConsumer<>(parameterTool.getRequired("input-topic"), new KafkaEventSchema(), parameterTool.getProperties())
+        FlinkKafkaConsumerBase<KafkaEvent> kafkaEventFlinkKafkaConsumerBase = new FlinkKafkaConsumer<KafkaEvent>(parameterTool.getRequired("input-topic"), new KafkaEventSchema(), parameterTool.getProperties())
                 .assignTimestampsAndWatermarks(new CustomWatermarkExtractor());
         DataStream<KafkaEvent> input = env.addSource(kafkaEventFlinkKafkaConsumerBase);
 
@@ -56,13 +56,13 @@ public class DubLikeRealTimeTask {
          * Map预处理，自己实现一个flatmap
          *
          * */
-        SingleOutputStreamOperator<R> mapresult = input.map(new DubLikeMap());
+//        SingleOutputStreamOperator<R> mapresult = input.map(new DubLikeMap());
 
 
         /**
          * 执行
          * */
-        env.execute("User like Dub Work Or Material");
+//        env.execute("User like Dub Work Or Material");
 
 
     }
