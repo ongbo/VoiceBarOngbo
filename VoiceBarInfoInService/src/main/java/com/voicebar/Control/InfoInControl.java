@@ -64,36 +64,36 @@ public class InfoInControl {
         if(classname.equals("CollectionDubMaterial")){
             CollectionDubMaterial collectionDubMaterial = JSONObject.parseObject(data, CollectionDubMaterial.class);
             resultmessage = JSONObject.toJSONString(collectionDubMaterial);
-            kafkaTemplate.send(CollectionDubMaterialTopic, resultmessage+"##1##");
+            kafkaTemplate.send(CollectionDubMaterialTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("CollectionDubWork")){
             CollectionDubWork collectionDubWork = JSONObject.parseObject(data, CollectionDubWork.class);
             resultmessage = JSONObject.toJSONString(collectionDubWork);
-            kafkaTemplate.send(CollectionDubWorkTopic, resultmessage+"##1##");
+            kafkaTemplate.send(CollectionDubWorkTopic, resultmessage+"##1##"+new Date().getTime());
 
         }else if(classname.equals("DubMaterial")){
             DubMaterial dubMaterial = JSONObject.parseObject(data, DubMaterial.class);
             resultmessage = JSONObject.toJSONString(dubMaterial);
-            kafkaTemplate.send(DubMaterialTopic, resultmessage+"##1##");
+            kafkaTemplate.send(DubMaterialTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("LikeDubWork")){
             LikeDubWork likeDubWork = JSONObject.parseObject(data, LikeDubWork.class);
             resultmessage = JSONObject.toJSONString(likeDubWork);
-            kafkaTemplate.send(LikeDubWorkTopic, resultmessage+"##1##");
+            kafkaTemplate.send(LikeDubWorkTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("ScanDubMaterial")){
             ScanDubMaterial scanDubMaterial = JSONObject.parseObject(data, ScanDubMaterial.class);
             resultmessage = JSONObject.toJSONString(scanDubMaterial);
-            kafkaTemplate.send(ScanDubMaterialTopic, resultmessage+"##1##");
+            kafkaTemplate.send(ScanDubMaterialTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("ScanDubWork")){
             ScanDubWork scanDubWork = JSONObject.parseObject(data, ScanDubWork.class);
             resultmessage = JSONObject.toJSONString(scanDubWork);
-            kafkaTemplate.send(ScanDubWorkTopic, resultmessage+"##1##");
+            kafkaTemplate.send(ScanDubWorkTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("TrendDubMaterial")){
             TrendDubMaterial trendDubMaterial = JSONObject.parseObject(data, TrendDubMaterial.class);
             resultmessage = JSONObject.toJSONString(trendDubMaterial);
-            kafkaTemplate.send(TrendDubMaterialTopic, resultmessage+"##1##");
+            kafkaTemplate.send(TrendDubMaterialTopic, resultmessage+"##1##"+new Date().getTime());
         }else if(classname.equals("TrendDubWork")){
             TrendDubWork trendDubWork = JSONObject.parseObject(data, TrendDubWork.class);
             resultmessage = JSONObject.toJSONString(trendDubWork);
-            kafkaTemplate.send(TrendDubWorkTopic, resultmessage+"##1##");
+            kafkaTemplate.send(TrendDubWorkTopic, resultmessage+"##1##"+new Date().getTime());
         }
 
         ResultMessage resultMessage = new ResultMessage();
