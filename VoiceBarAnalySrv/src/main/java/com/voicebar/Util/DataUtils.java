@@ -1,11 +1,16 @@
 package com.voicebar.Util;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
 public class DataUtils {
+    /**
+     * 计算属于哪个年代
+     * 用于年代标签
+     * */
     public static String getYearbaseByAge(String age){
         //获取日历
         Calendar calendar = Calendar.getInstance();
@@ -40,5 +45,45 @@ public class DataUtils {
             yearbasetype = "10后";
         }
         return yearbasetype;
+    }
+
+    /**
+     * 计算
+     * 来了两个时间,计算其实时间点和结束时间点的天数
+     * */
+    public static int getDayBetweenbyStartAndend(String starttime,String endtime,String dateFormatstring) throws ParseException {
+        DateFormat dateFormat = new SimpleDateFormat(dateFormatstring);
+        Date start = dateFormat.parse(starttime);
+        Date end = dateFormat.parse(endtime);
+
+        Calendar startcanlendar = Calendar.getInstance();
+        Calendar endcalendar = Calendar.getInstance();
+        startcanlendar.setTime(start);
+        endcalendar.setTime(end);
+        int days = 0;
+        while(startcanlendar.before(endcalendar)){
+            startcanlendar.add(Calendar.DAY_OF_YEAR,1);
+            days+=1;
+        }
+        return days;
+    }
+
+    /**
+     *
+     * */
+
+    /**
+     * 将穿过来的时间"20170323 123322"
+     * 转换成Thu Mar 23 00:33:22 CST 2017格式
+     * 然后获取到小时：12点
+     *
+     * */
+    public static String gethoursBydate(String timevalue) throws ParseException {
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd hhmmss");
+        Date time = dateFormat.parse(timevalue);
+//        System.out.println(time);
+        dateFormat = new SimpleDateFormat("hh");
+        String resulthour = dateFormat.format(time);
+        return resulthour;
     }
 }

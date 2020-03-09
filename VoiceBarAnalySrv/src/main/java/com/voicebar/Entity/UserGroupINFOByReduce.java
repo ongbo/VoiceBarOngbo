@@ -9,7 +9,7 @@ public class UserGroupINFOByReduce {
     private double maxamout;//最高得分
     private int days;//单日消费频次
     private List<Integer> worktheme;//保存作品类型
-    private List<Long> worknums;//保存worktheme作品类型对应的数量
+    private List<Integer> worknums;//保存worktheme作品类型对应的数量
     private List<Long> workTimenums;//保存在某个时间点的作品数量。上午（7-12），下午（12-7），晚上（7-12），凌晨（0-7）
     private String groupfield;
 
@@ -61,11 +61,11 @@ public class UserGroupINFOByReduce {
         this.worktheme = worktheme;
     }
 
-    public List<Long> getWorknums() {
+    public List<Integer> getWorknums() {
         return worknums;
     }
 
-    public void setWorknums(List<Long> worknums) {
+    public void setWorknums(List<Integer> worknums) {
         this.worknums = worknums;
     }
 
