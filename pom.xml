@@ -13,6 +13,8 @@
         <module>VoiceBarRegisterCenter</module>
         <module>VoiceBarInfoInService</module>
         <module>VoiceBarCommon</module>
+        <module>VoiceBarSearchInfo</module>
+        <module>voicebarViewService</module>
     </modules>
 
 

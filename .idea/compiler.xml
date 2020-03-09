@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="VoiceBarCommon" />
         <module name="VoiceBarRegisterCenter" />
-        <module name="VoiceBarAnalySrv" />
+        <module name="voicebarViewService" />
         <module name="VoiceBarInfoInService" />
+        <module name="VoiceBarCommon" />
+        <module name="VoiceBarSearchInfo" />
+        <module name="VoiceBarAnalySrv" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +19,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="VoiceBarInfoInService" options="-parameters" />
       <module name="VoiceBarRegisterCenter" options="-parameters" />
+      <module name="VoiceBarSearchInfo" options="-parameters" />
+      <module name="voicebarViewService" options="-parameters" />
     </option>
   </component>
 </project>

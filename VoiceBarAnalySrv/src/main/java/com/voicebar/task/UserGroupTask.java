@@ -51,7 +51,7 @@ public class UserGroupTask {
                 }
             }
 
-            KmeansRunByUserGroup kMeansRunbyusergroup =new KmeansRunByUserGroup(6, dataSet);
+            KmeansRunByUserGroup kMeansRunbyusergroup =new KmeansRunByUserGroup(6, dataset);
 
             Set<Cluster> clusterSet = kMeansRunbyusergroup.run();
             List<Point> finalClutercenter = new ArrayList<Point>();

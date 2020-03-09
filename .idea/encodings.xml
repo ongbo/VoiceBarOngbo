@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/VoiceBarInfoInService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/VoiceBarRegisterCenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/VoiceBarSearchInfo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/voicebarViewService" charset="UTF-8" />
   </component>
 </project>

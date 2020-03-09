@@ -36,9 +36,9 @@ public class UserGroupMap implements MapFunction<String, UserGroupINFOByReduce> 
         * 0:配音Id：DubID
         * 1:用户ID：Uid
         * 2:素材ID：Mid
-        * 3:配音真实语种：language
-        * 4:类别：theme
-        * 5:声音类型：style
+        * 3:配音真实语种ID：language
+        * 4:类别ID：theme
+        * 5:声音风格ID：style
         * 6:配音时间：createTime
         * 7:作品系统评分：workscore
         * */
