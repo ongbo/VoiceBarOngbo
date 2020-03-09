@@ -1,0 +1,37 @@
+package com.voicebar.task;
+
+import com.voicebar.Entity.UserGroupINFOByReduce;
+import com.voicebar.Map.UserGroupMap;
+import com.voicebar.Reduce.UserGroupReduce;
+import org.apache.flink.api.java.DataSet;
+import org.apache.flink.api.java.ExecutionEnvironment;
+import org.apache.flink.api.java.operators.MapOperator;
+import org.apache.flink.api.java.operators.ReduceOperator;
+import org.apache.flink.api.java.utils.ParameterTool;
+
+public class UserGroupTask {
+    public static void main(String[] args) {
+        final ParameterTool params = ParameterTool.fromArgs(args);
+
+        // set up the execution environment
+        final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+
+        // make parameters available in the web interface
+        env.getConfig().setGlobalJobParameters(params);
+
+        // get input data
+        DataSet<String> text = env.readTextFile(params.get("input"));
+
+        MapOperator<String, UserGroupINFOByReduce> mapresult = text.map(new UserGroupMap());
+        ReduceOperator<UserGroupINFOByReduce> reduceresult = mapresult.reduce(new UserGroupReduce());
+        /**
+         * 目前为止，已经将一个用户的所有的作品信息都收集到一起了。It's OK的。而且是分用户收集到一起了ArrayList
+         * 然后需要对每个用户的作品计算维度向量
+         * 构成Kmeans的维度信息，对于一些没必要的东西进行降维
+         * */
+
+
+
+
+    }
+}

@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc54d00-932d-4f66-bacb-33c90fac2a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CreateDataSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/SexPreInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/SexPreMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/SexpreReduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/LR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/SexPreTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/DubLikeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/DubLikeMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MapUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MapUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubLikeRealTimeTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubLikeRealTimeTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarInfoInService/target/classes/com/voicebar/Control/InfoInControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarInfoInService/target/classes/com/voicebar/Control/InfoInControl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupINFOByReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMapByReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/UserGroupReduce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,12 +26,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubLikeRealTimeTask.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
+            <state relative-caret-position="672">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,130 +40,91 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/DubLikeMap.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/UserGroupReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="231">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1534#1547#0" expanded="true" />
+                <element signature="e#537#552#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/SexPreInfo.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMapByReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1039#1040#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1190#1191#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#1480#1481#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/SexPreTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#1204#1220#0" expanded="true" />
-                <element signature="e#1213#1404#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1730#1738#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/Matrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CreateDataSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/SexPreMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="125">
+              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1139#1329#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#2103#2121#0" expanded="true" />
+                <element signature="e#2259#2273#0" expanded="true" />
+                <element signature="e#2336#2351#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/SexpreReduce.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupINFOByReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="76">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding>
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1260#1261#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1391#1392#0" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1461#1462#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1631#1632#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
+                <element signature="e#1776#1777#0" expanded="true" />
+                <element signature="e#1809#1810#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#1905#1906#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1338#1346#0" expanded="true" />
-                <element signature="e#1767#1775#0" expanded="true" />
+                <element signature="e#1348#1363#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/LR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="117" column="12" selection-start-line="117" selection-start-column="12" selection-end-line="117" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/KafkaEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -196,12 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubPopularityTask.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/DubPolularInfo.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/CarrierUtil.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CarrierInfo.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/CarrierMap.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/CarrierReduce.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/CarrierTask.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/mailInfo.java" />
@@ -247,6 +197,12 @@
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/SexpreReduce.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/DubLikeMap.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/SexPreTask.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupINFOByReduce.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupInfo.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/UserGroupReduce.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMap.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMapByReduce.java" />
       </list>
     </option>
   </component>
@@ -280,18 +236,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="226" />
-    <option name="y" value="264" />
-    <option name="width" value="1633" />
-    <option name="height" value="797" />
+    <option name="x" value="181" />
+    <option name="y" value="458" />
+    <option name="width" value="1405" />
+    <option name="height" value="785" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -299,6 +248,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,23 +346,10 @@
               <item name="voicebar" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="voicebar" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,7 +449,8 @@
       <updated>1583556277049</updated>
       <workItem from="1583556288395" duration="23167000" />
       <workItem from="1583632265498" duration="1235000" />
-      <workItem from="1583634686729" duration="11266000" />
+      <workItem from="1583634686729" duration="13437000" />
+      <workItem from="1583716290596" duration="5603000" />
     </task>
     <task id="LOCAL-00001" summary="log with kafka and flume">
       <created>1583589043544</created>
@@ -541,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583645999153</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="flink and LR实现性别预测">
+      <created>1583661831003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583661831003</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35668000" />
+    <option name="totallyTimeSpent" value="43442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,10 +503,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="242" y="445" width="1633" height="797" extended-state="0" />
+    <frame x="181" y="458" width="1405" height="785" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20238844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23917829" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -579,7 +525,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.25722983" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.19007093" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.19007093" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -641,107 +587,10 @@
     <MESSAGE value="kafka and springboot" />
     <MESSAGE value="kafka to log" />
     <MESSAGE value="new Map and new Util" />
-    <option name="LAST_COMMIT_MESSAGE" value="new Map and new Util" />
+    <MESSAGE value="flink and LR实现性别预测" />
+    <option name="LAST_COMMIT_MESSAGE" value="flink and LR实现性别预测" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/CarrierReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="46" column="87" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MongoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/mailInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MailUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/MailMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/MailReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/CarrierTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/MailTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/CarrierMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1086,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/DubLike.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1129,27 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/KafkaEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubLikeRealTimeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="49" column="113" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1167,17 +992,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/Matrix.java">
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/SexPreInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CreateDataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1379#1380#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,6 +1039,13 @@
             <element signature="e#1403#1404#0" expanded="true" />
             <element signature="e#1730#1738#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1223,39 +1078,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/SexPreInfo.java">
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/KafkaEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/DubLikeRealTimeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/MailTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/CarrierTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="934">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/DubLike.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CarrierInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="5" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/CreateDataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1348#1363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/UserGroupReduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#537#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/UserGroupINFOByReduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1776#1777#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/UserGroupMapByReduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1139#1329#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#2103#2121#0" expanded="true" />
+            <element signature="e#2259#2273#0" expanded="true" />
+            <element signature="e#2336#2351#0" expanded="true" />
           </folding>
         </state>
       </provider>
