@@ -61,7 +61,7 @@ public class UserGroupTask {
                 point.setId(count++);
                 finalClutercenter.add(point);
             }
-            DataSet<Point> flinalMap = map.map(new KmeansFinalusergroupMap(finalClutercenter));
+//            DataSet<Point> flinalMap = map.map(new KmeansFinalusergroupMap(finalClutercenter));
             env.execute("UserGroupTask analy");
         } catch (Exception e) {
             e.printStackTrace();
