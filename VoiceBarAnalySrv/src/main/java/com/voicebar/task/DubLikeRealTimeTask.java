@@ -1,7 +1,10 @@
 package com.voicebar.task;
 
+import com.voicebar.Entity.DubLike;
 import com.voicebar.Entity.KafkaEvent;
 import com.voicebar.Map.DubLikeMap;
+import com.voicebar.Reduce.DubLikeReduce;
+import com.voicebar.Sink.ThemeLikeSink;
 import com.voicebar.Util.KafkaEventSchema;
 import org.apache.flink.api.common.restartstrategy.RestartStrategies;
 import org.apache.flink.api.java.utils.ParameterTool;
@@ -12,14 +15,16 @@ import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
 import org.apache.flink.streaming.api.watermark.Watermark;
+import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBase;
 
 import javax.annotation.Nullable;
 /**
-* 实时计算用户的偏好
+* 实时计算用户的题材偏好
  * 根据浏览作品
  * */
+
 public class DubLikeRealTimeTask {
     public static void main(String[] args) {
         //参数形式，生产环境中以参数形式指定
@@ -56,14 +61,20 @@ public class DubLikeRealTimeTask {
          * Map预处理，自己实现一个flatmap
          *
          * */
-        input.flatMap(new DubLikeMap());
-//        SingleOutputStreamOperator<R> mapresult = input.map(new DubLikeMap());
+        SingleOutputStreamOperator<DubLike> mapresult = input.flatMap(new DubLikeMap());
+        SingleOutputStreamOperator<DubLike> reduceresult = mapresult.keyBy("groupfield").timeWindow(Time.seconds(5)).reduce(new DubLikeReduce());
+
+        reduceresult.addSink(new ThemeLikeSink("themelikestatics","voiceportrait"));
 
 
         /**
          * 执行
          * */
-//        env.execute("User like Dub Work Or Material");
+        try {
+            env.execute("User like Dub Work Or Material");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }

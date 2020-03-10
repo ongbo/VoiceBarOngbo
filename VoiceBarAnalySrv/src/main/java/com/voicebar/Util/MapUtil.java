@@ -36,10 +36,26 @@ public class MapUtil {
 //    }
     static class MapValueComparator implements Comparator<Map.Entry<String, Double>> {
 
-        @Override
+
         public int compare(Map.Entry<String, Double> me1, Map.Entry<String, Double> me2) {
 
             return me1.getValue().compareTo(me2.getValue());
         }
     }
+
+
+    public static String getmaxLike(Map<String,Long> map){
+        if(map == null || map.isEmpty()) return null;
+        Set<Map.Entry<String, Long>> entries = map.entrySet();
+        Long maxvalue = Long.MIN_VALUE;
+        String likemax = "";
+        for(Map.Entry<String,Long> entry : entries){
+            if(entry.getValue() > maxvalue){
+                maxvalue = entry.getValue();
+                likemax = entry.getKey();
+            }
+        }
+        return likemax;
+    }
+
 }
