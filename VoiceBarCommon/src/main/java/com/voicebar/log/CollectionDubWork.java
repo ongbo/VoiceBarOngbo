@@ -66,4 +66,5 @@ public class CollectionDubWork {
     public String getStyle() {
         return style;
     }
+
 }
