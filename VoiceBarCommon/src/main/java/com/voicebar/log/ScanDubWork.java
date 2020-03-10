@@ -80,4 +80,18 @@ public class ScanDubWork implements Serializable {
     public String getStyle() {
         return style;
     }
+
+    @Override
+    public String toString() {
+        return "ScanDubWork{" +
+                "userid=" + userid +
+                ", workid=" + workid +
+                ", materialid=" + materialid +
+                ", scantime='" + scantime + '\'' +
+                ", staytime='" + staytime + '\'' +
+                ", language='" + language + '\'' +
+                ", theme='" + theme + '\'' +
+                ", style='" + style + '\'' +
+                '}';
+    }
 }

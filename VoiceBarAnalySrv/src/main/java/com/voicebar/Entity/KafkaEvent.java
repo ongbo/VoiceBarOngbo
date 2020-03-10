@@ -1,7 +1,7 @@
 package com.voicebar.Entity;
 
 public class KafkaEvent {
-    private final static String splitword = "##";//分隔符
+    private final static String splitword = "##1##";//分隔符
     private String word;//字段
     private int frequency;//频次
     private long timestamp;//时间戳

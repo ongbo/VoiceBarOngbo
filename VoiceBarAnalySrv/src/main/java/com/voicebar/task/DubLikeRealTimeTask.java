@@ -56,6 +56,7 @@ public class DubLikeRealTimeTask {
          * Map预处理，自己实现一个flatmap
          *
          * */
+        input.flatMap(new DubLikeMap());
 //        SingleOutputStreamOperator<R> mapresult = input.map(new DubLikeMap());
 
 

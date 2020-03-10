@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("mongodata")
+@RequestMapping("mongoData")
 @CrossOrigin
 public class MongoDataViewControl {
 
@@ -23,17 +23,23 @@ public class MongoDataViewControl {
     public String resultinfoView(@RequestBody AnalyForm analyForm){
         String type = analyForm.getType();
         List<AnalyResult> list = new ArrayList<AnalyResult>();
-        if("yearbase".equals(type)){
+        if("yearBase".equals(type)){
+            /**查询年代标签信息*/
             list = mongoDataService.searchYearBase();
         }else if("email".equals(type)){
+            /**查询邮箱信息*/
             list = mongoDataService.searchEmail();
         }else if("carrier".equals(type)){
+            /**查询运营商信息*/
             list = mongoDataService.searchCarrier();
         }else if("themelike".equals(type)){
+            /**题材偏好信息*/
             list = mongoDataService.searchThemeLike();
         }else if("stylelike".equals(type)){
+            /**风格偏好信息*/
             list = mongoDataService.searchStyleLike();
         }
+        /**运营商偏好，配音能力划分，*/
 
         ViewResultAnaly viewResultAnaly = new ViewResultAnaly();
         List<String> infolist = new ArrayList<String>();

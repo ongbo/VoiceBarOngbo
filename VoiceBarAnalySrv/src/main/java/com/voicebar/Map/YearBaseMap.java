@@ -8,9 +8,20 @@ import org.apache.flink.api.common.functions.MapFunction;
 
 
 
-/*
+/**
 * 年代标签Map方法
-* */
+ * 过来的是用户信息日志
+ 用户信息表：
+ 0：用户ID：userid
+ 1：用户名：username
+ 2：密码：password
+ 3：性别：sex
+ 4：手机号：phonenumber
+ 5：邮箱：mail
+ 6：年龄：age
+ 7：省份：province
+ 8：注册时间：registtime
+* * */
 public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
     public YearBaseEntity map(String value) throws Exception {
        if(StringUtils.isBlank(value)){
@@ -18,14 +29,14 @@ public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
        }
        String[] userinfos = value.split(",");
 
-       String userId = userinfos[0];
-       String username = userinfos[1];
-       String sex = userinfos[2];
-       String telphone = userinfos[3];
-       String email = userinfos[4];
-       String age = userinfos[5];
-       String registerTime = userinfos[6];
-       String userprovince = userinfos[7];
+       String userId = userinfos[0];//用户id
+       String username = userinfos[1];//用户名
+       String sex = userinfos[2];//用户性别
+       String telphone = userinfos[3];//用户手机号
+       String email = userinfos[4];//用户邮箱
+       String age = userinfos[5];//用户年龄
+       String registerTime = userinfos[6];//用户注册时间
+       String userprovince = userinfos[7];//用户所在地区
 
        String yearbasetype = DataUtils.getYearbaseByAge(age);
        String tablename = "userflaginfo";

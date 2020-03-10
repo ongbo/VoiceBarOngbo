@@ -13,10 +13,8 @@ import org.apache.flink.util.Collector;
 import java.util.HashMap;
 import java.util.Map;
 /**
- * 这里是根据浏览作品的风格和题材去分割
- * 在Hbase中存储的形式是：
- * style|theme
- * 深沉|广告配音
+ *从kafka中读取一个String，但是那个string消息过来，会被flink先反序列化成KafkaEvent
+ * 然后从KafkaEvent中分析数据
  * */
 public class DubLikeMap implements FlatMapFunction<KafkaEvent, DubLike> {
 
@@ -27,7 +25,7 @@ public class DubLikeMap implements FlatMapFunction<KafkaEvent, DubLike> {
          * */
         String data = value.getWord();
         ScanDubWork scanDubWork = JSONObject.parseObject(data, ScanDubWork.class);
-
+        System.out.println("###############获取到一个浏览作品数据>>>>>>>>>>>>>>>>>>"+scanDubWork);
         /**
          * 获取一个Work作品的基本信息
          * */

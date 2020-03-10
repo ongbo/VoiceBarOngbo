@@ -18,6 +18,7 @@ public class BaseMongo {
             ServerAddress address = new ServerAddress(addressList[i],Integer.parseInt(portList[i]));
             addresses.add(address);
         }
+
         mongoClient = new MongoClient(addresses);
 
     }
