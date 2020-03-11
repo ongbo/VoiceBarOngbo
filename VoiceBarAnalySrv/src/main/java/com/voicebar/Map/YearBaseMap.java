@@ -27,16 +27,18 @@ public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
        if(StringUtils.isBlank(value)){
            return null;
        }
+       System.out.print(value);
        String[] userinfos = value.split(",");
+        System.out.println("   "+userinfos.length);
 
-       String userId = userinfos[0];//用户id
+        String userId = userinfos[0];//用户id
        String username = userinfos[1];//用户名
-       String sex = userinfos[2];//用户性别
-       String telphone = userinfos[3];//用户手机号
-       String email = userinfos[4];//用户邮箱
-       String age = userinfos[5];//用户年龄
-       String registerTime = userinfos[6];//用户注册时间
-       String userprovince = userinfos[7];//用户所在地区
+       String sex = userinfos[3];//用户性别
+       String telphone = userinfos[4];//用户手机号
+       String email = userinfos[5];//用户邮箱
+       String age = userinfos[6];//用户年龄
+       String registerTime = userinfos[7];//用户注册时间
+       String userprovince = userinfos[8];//用户所在地区
 
        String yearbasetype = DataUtils.getYearbaseByAge(age);
        String tablename = "userflaginfo";

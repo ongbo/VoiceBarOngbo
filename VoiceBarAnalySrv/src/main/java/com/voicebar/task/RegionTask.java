@@ -1,29 +1,20 @@
 package com.voicebar.task;
 
+import com.voicebar.Entity.RegionInfo;
 import com.voicebar.Entity.YearBaseEntity;
-import com.voicebar.Map.YearBaseMap;
-import com.voicebar.Reduce.YearBaseReduce;
+import com.voicebar.Map.RegionMap;
+import com.voicebar.Reduce.RegionReduce;
 import com.voicebar.Util.MongoUtil;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.operators.MapOperator;
+import org.apache.flink.api.java.operators.ReduceOperator;
 import org.apache.flink.api.java.utils.ParameterTool;
 import org.bson.Document;
 
 import java.util.List;
 
-/*
-* 年代标签：
-50  年代：
-60
-70
-80
-90
-00
-10
-统计每个群体的数量
-* */
-public class YearBaseTask {
+public class RegionTask {
     public static void main(String[] args) {
         //获取参数
         final ParameterTool params = ParameterTool.fromArgs(args);
@@ -35,19 +26,19 @@ public class YearBaseTask {
         env.getConfig().setGlobalJobParameters(params);
 
         //获取输入的数据
-//        DataSet<String> text = env.readTextFile(params.get("input"));
-        DataSet<String> text = env.readTextFile("/Users/ongbo/JarPackage/hadoop/hadoop-2.7.7/userinfoRegisterinfo.log");
-        DataSet<YearBaseEntity> mapresult = text.map(new YearBaseMap());
-        DataSet<YearBaseEntity> reduceresult = mapresult.groupBy("groupfield").reduce(new YearBaseReduce());
+        DataSet<String> text = env.readTextFile(params.get("input"));
+
+        MapOperator<String, RegionInfo> mapresult = text.map(new RegionMap());
+        ReduceOperator<RegionInfo> reduceresult = mapresult.groupBy("groupfield").reduce(new RegionReduce());
         try {
-            List<YearBaseEntity> resultList = reduceresult.collect();
-            for(YearBaseEntity yearBaseEntity : resultList){
-                String yeartype = yearBaseEntity.getYeartype();
-                Long count = yearBaseEntity.getCount();
-                Document document = MongoUtil.findoneby("yearbasestatics","voiceportrait",yeartype);
+            List<RegionInfo> resultList = reduceresult.collect();
+            for(RegionInfo regioninfo : resultList){
+                String regionname= regioninfo.getRegionname();
+                Long count = regioninfo.getCount();
+                Document document = MongoUtil.findoneby("regionstatics","voiceportrait",regionname);
                 if(document == null){
                     document = new Document();
-                    document.put("info",yeartype);
+                    document.put("info",regionname);
                     document.put("count",count);
                 }else {
                     //如果里面已经有了，就更新
@@ -63,6 +54,5 @@ public class YearBaseTask {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

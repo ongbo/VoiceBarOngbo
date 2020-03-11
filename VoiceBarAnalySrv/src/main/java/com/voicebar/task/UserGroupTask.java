@@ -34,7 +34,7 @@ public class UserGroupTask {
         DataSet<String> text = env.readTextFile(params.get("input"));
 
         MapOperator<String, UserGroupINFOByReduce> mapresult = text.map(new UserGroupMap());
-        ReduceOperator<UserGroupINFOByReduce> reduceresult = mapresult.reduce(new UserGroupReduce());
+        ReduceOperator<UserGroupINFOByReduce> reduceresult = mapresult.groupBy("groupfield").reduce(new UserGroupReduce());
         /**
          * 目前为止，已经将一个用户的所有的作品信息都收集到一起了。It's OK的。而且是分用户收集到一起了ArrayList
          * 然后需要对每个用户的作品计算维度向量
