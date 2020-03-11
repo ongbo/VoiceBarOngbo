@@ -10,6 +10,29 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * 展示效果：
+ *  年代群体：
+ *  手机运营商：
+ *  邮件运营商：
+ * 地区：
+ *
+ * 用户行为：
+ *  异常登陆：
+ *  PV：
+ *  UV：
+ *  热门作品：
+ *  用户群体：
+ * 用户偏好：
+ *  题材偏好：
+ *  风格偏好：
+ *  语言偏好：
+ * 配音能力：
+ * 用户标签：
+ * 所有用户的标签信息
+ *  性别，年龄
+ * */
 @RestController
 @RequestMapping("hbaseData")
 @CrossOrigin
@@ -25,40 +48,43 @@ public class HbaseDataViewControl {
         List<ViewResultAnaly> resultlist = new ArrayList<ViewResultAnaly>();
         if("-1".equals(type)){
             ViewResultAnaly viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.baiJiaZhiShuInfo(userid);
-            viewResultAnaly.setTypename("败家指数");
+            result = hbaseDataService.hotwork(userid);
+            viewResultAnaly.setTypename("热门作品");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
+
             viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.brandLike(userid);
-            viewResultAnaly.setTypename("品牌偏好");
+            result = hbaseDataService.themeLike(userid);
+            viewResultAnaly.setTypename("题材偏好");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
+
+            viewResultAnaly = new ViewResultAnaly();
+            result = hbaseDataService.languageLike(userid);
+            viewResultAnaly.setTypename("语言偏好");
+            viewResultAnaly.setLablevalue(result);
+            resultlist.add(viewResultAnaly);
+
+            viewResultAnaly = new ViewResultAnaly();
+            result = hbaseDataService.styleLike(userid);
+            viewResultAnaly.setTypename("风格偏好");
+            viewResultAnaly.setLablevalue(result);
+            resultlist.add(viewResultAnaly);
+
             viewResultAnaly = new ViewResultAnaly();
             result = hbaseDataService.carrierinfo(userid);
-            viewResultAnaly.setTypename("运营商");
+            viewResultAnaly.setTypename("手机运营商");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
-            viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.chaomanandwomen(userid);
-            viewResultAnaly.setTypename("潮男潮女");
-            viewResultAnaly.setLablevalue(result);
-            resultlist.add(viewResultAnaly);
-            viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.consumptionlevel(userid);
-            viewResultAnaly.setTypename("消费水平");
-            viewResultAnaly.setLablevalue(result);
-            resultlist.add(viewResultAnaly);
+
+
+
             viewResultAnaly = new ViewResultAnaly();
             result = hbaseDataService.emailinfo(userid);
             viewResultAnaly.setTypename("邮件运营商");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
-            viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.yearkeyword(userid);
-            viewResultAnaly.setTypename("年度关键词");
-            viewResultAnaly.setLablevalue(result);
-            resultlist.add(viewResultAnaly);
+
             viewResultAnaly = new ViewResultAnaly();
             result = hbaseDataService.sex(userid);
             viewResultAnaly.setTypename("性别");
@@ -69,45 +95,43 @@ public class HbaseDataViewControl {
             viewResultAnaly.setTypename("用户群体特征");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
-            viewResultAnaly = new ViewResultAnaly();
-            result = hbaseDataService.usetypeinfo(userid);
-            viewResultAnaly.setTypename("终端偏好");
-            viewResultAnaly.setLablevalue(result);
-            resultlist.add(viewResultAnaly);
+
             viewResultAnaly = new ViewResultAnaly();
             result = hbaseDataService.ageinfo(userid);
             viewResultAnaly.setTypename("年龄");
             viewResultAnaly.setLablevalue(result);
             resultlist.add(viewResultAnaly);
+
+            viewResultAnaly = new ViewResultAnaly();
+            result = hbaseDataService.region(userid);
+            viewResultAnaly.setTypename("地区");
+            viewResultAnaly.setLablevalue(result);
+            resultlist.add(viewResultAnaly);
+
+
             viewResultAnaly = new ViewResultAnaly();
             viewResultAnaly.setList(resultlist);
             String resultjson = JSONObject.toJSONString(viewResultAnaly);
             return resultjson;
         }
-        if("baiJiaZhiShuInfo".equals(type)){
-            result = hbaseDataService.baiJiaZhiShuInfo(userid);
-        }else if ("brandLike".equals(type)){
-            result = hbaseDataService.brandLike(userid);
+        if("hotwork".equals(type)){
+            result = hbaseDataService.hotwork(userid);
+        }else if ("themelike".equals(type)){
+            result = hbaseDataService.themeLike(userid);
         }else if ("carrierinfo".equals(type)){
             result = hbaseDataService.carrierinfo(userid);
-        }else if ("chaomanandwomen".equals(type)){
-            result = hbaseDataService.chaomanandwomen(userid);
-        }else if ("consumptionlevel".equals(type)){
-            result = hbaseDataService.consumptionlevel(userid);
+        }else if ("stylelike".equals(type)){
+            result = hbaseDataService.styleLike(userid);
+        }else if ("languagelike".equals(type)){
+            result = hbaseDataService.languageLike(userid);
         }else if ("emailinfo".equals(type)){
             result = hbaseDataService.emailinfo(userid);
-        }else if ("yearkeyword".equals(type)){
-            result = hbaseDataService.yearkeyword(userid);
-        }else if ("monthkeyword".equals(type)){
-            result = hbaseDataService.monthkeyword(userid);
-        }else if ("quarterkeyword".equals(type)){
-            result = hbaseDataService.quarterkeyword(userid);
+        }else if ("region".equals(type)){
+            result = hbaseDataService.region(userid);
         }else if ("sex".equals(type)){
             result = hbaseDataService.sex(userid);
         }else if ("usergroupinfo".equals(type)){
             result = hbaseDataService.usergroupinfo(userid);
-        }else if ("usetypeinfo".equals(type)){
-            result = hbaseDataService.usetypeinfo(userid);
         }else if ("ageinfo".equals(type)){
             result = hbaseDataService.ageinfo(userid);
         }

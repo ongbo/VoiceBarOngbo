@@ -10,7 +10,29 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *
+ * 展示效果：
+ *  年代群体：
+ *  手机运营商：
+ *  邮件运营商：
+ *  地区：
+ *
+ * 用户行为：
+ *  异常登陆：
+ *  PV：
+ *  UV：
+ *  热门作品：
+ *  用户群体：
+ * 用户偏好：
+ *  题材偏好：
+ *  风格偏好：
+ *  语言偏好：
+ * 配音能力：
+ * 用户标签：
+ * 所有用户的标签信息
+ *  性别，年龄
+ * */
 @RestController
 @RequestMapping("mongoData")
 @CrossOrigin
@@ -30,7 +52,7 @@ public class MongoDataViewControl {
             /**查询邮箱信息*/
             list = mongoDataService.searchEmail();
         }else if("carrier".equals(type)){
-            /**查询运营商信息*/
+            /**查询手机号运营商信息*/
             list = mongoDataService.searchCarrier();
         }else if("themelike".equals(type)){
             /**题材偏好信息*/
@@ -38,6 +60,22 @@ public class MongoDataViewControl {
         }else if("stylelike".equals(type)){
             /**风格偏好信息*/
             list = mongoDataService.searchStyleLike();
+        }else if("languagelike".equals(type)){
+            /**语言偏好*/
+            list = mongoDataService.searchLanguage();
+        }else if("hotwork".equals(type)){
+            /**热门作品*/
+            list = mongoDataService.searchHotWork();
+        }else if("pv".equals(type)){
+            list = mongoDataService.searchPV();
+        }else if("uv".equals(type)){
+            list = mongoDataService.searchUV();
+        }else if("region".equals(type)){
+            list = mongoDataService.searchResion();
+        }else if("errorlogin".equals(type)){
+            list = mongoDataService.searchErrorLogin();
+        }else if("usergroup".equals(type)){
+            list = mongoDataService.searchResion();
         }
         /**运营商偏好，配音能力划分，*/
 

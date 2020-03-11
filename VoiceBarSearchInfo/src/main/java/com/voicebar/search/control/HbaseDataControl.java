@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("hbaseData")
 public class HbaseDataControl  {
+    /**题材偏好*/
     @RequestMapping(value = "themelike",method = RequestMethod.POST)
     public String themelike(String userid){
         String result = "";
@@ -23,7 +24,7 @@ public class HbaseDataControl  {
         result = "专题配音";
         return result;
     }
-
+/**风格偏好*/
     @RequestMapping(value = "stylelike",method = RequestMethod.POST)
     public String stylelike(String userid){
         String result = "";
@@ -40,6 +41,7 @@ public class HbaseDataControl  {
         return result;
     }
 
+    /**语言偏好*/
     @RequestMapping(value = "languagelike",method = RequestMethod.POST)
     public String languagelike(String userid){
         String result = "";
@@ -55,6 +57,8 @@ public class HbaseDataControl  {
         result = "中文";
         return result;
     }
+
+    /**手机号运营*/
     @RequestMapping(value = "carrierinfo",method = RequestMethod.POST)
     public String carrierinfo(String userid){
         String result = "";
@@ -72,7 +76,7 @@ public class HbaseDataControl  {
         return result;
     }
 
-
+    /**邮箱*/
     @RequestMapping(value = "emailinfo",method = RequestMethod.POST)
     public String emailinfo(String userid){
         String result = "";
@@ -90,6 +94,7 @@ public class HbaseDataControl  {
         return result;
     }
 
+    /***/
     @RequestMapping(value = "sex",method = RequestMethod.POST)
     public String sex(String userid){
         String result = "";
@@ -107,6 +112,8 @@ public class HbaseDataControl  {
         return result;
     }
 
+
+    /**风格偏好*/
     @RequestMapping(value = "ageinfo",method = RequestMethod.POST)
     public String ageinfo(String userid){
         String result = "";
@@ -124,4 +131,37 @@ public class HbaseDataControl  {
         return result;
     }
 
+    /**风格偏好*/
+    @RequestMapping(value = "region",method = RequestMethod.POST)
+    public String region(String userid){
+        String result = "";
+//        String tablename = "userflaginfo";
+//        String rowkey = userid;
+//        String familyname = "baseinfo";
+//        String column = "region";
+//        try {
+//            result = HbaseServiceImpl.getdata(tablename,rowkey,familyname,column);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        result = "湖南";
+        return result;
+    }
+
+    /**风格偏好*/
+    @RequestMapping(value = "usergroupinfo",method = RequestMethod.POST)
+    public String usergroupinfo(String userid){
+        String result = "";
+//        String tablename = "userflaginfo";
+//        String rowkey = userid;
+//        String family = "baseinfo";
+//        String column = "usergroupinfo";
+//        try {
+//            result = HbaseServiceImpl.getdata(tablename,rowkey,family,column);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+        result = "配音师";
+        return result;
+    }
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import sun.misc.Request;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,8 +24,8 @@ import java.util.List;
 @RequestMapping("voicebar")
 public class MongoDataControl {
 
-//    @Autowired
-//    private MongoDataServiceImpl mongoDataServiceImpl;
+    @Autowired
+    private MongoDataServiceImpl mongoDataServiceImpl;
 
 
     /**
@@ -181,7 +182,7 @@ public class MongoDataControl {
     }
 
     /**
-     * 题材偏爱程度
+     * 风格偏爱程度
      * */
     @RequestMapping(value = "searchStyleLike", method = RequestMethod.POST)
     public List<AnalyResult> searchStyleLike(){
@@ -211,6 +212,138 @@ public class MongoDataControl {
         return list;
 
 //        return mongoDataServiceImpl.listMongoInfoby("stylelikestatics");
+    }
+
+
+    /**
+     * 语言偏爱程度
+     * */
+    @RequestMapping(value = "searchLanguageLike", method = RequestMethod.POST)
+    public List<AnalyResult> searchLanguageLike(){
+        //李宁 爱迪达斯 森马 海尔
+        List<AnalyResult> list = new ArrayList<AnalyResult>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setCount(1350l);
+        analyResult.setInfo("李宁");
+        list.add(analyResult);
+
+        analyResult = new AnalyResult();
+        analyResult.setCount(1560l);
+        analyResult.setInfo("爱迪达斯");
+        list.add(analyResult);
+
+        analyResult = new AnalyResult();
+        analyResult.setCount(560l);
+        analyResult.setInfo("森马");
+        list.add(analyResult);
+
+        analyResult = new AnalyResult();
+        analyResult.setCount(4560l);
+        analyResult.setInfo("海尔");
+        list.add(analyResult);
+
+        return list;
+
+//        return mongoDataServiceImpl.listMongoInfoby("languagelikestatics");
+    }
+
+    /**地区*/
+    @RequestMapping(value = "searchregion",method = RequestMethod.POST)
+    public List<AnalyResult> searchRegion(){
+        List<AnalyResult> list = new ArrayList<AnalyResult>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setCount(123440L);
+        analyResult.setInfo("湖南");
+        list.add(analyResult);
+        analyResult = new AnalyResult();
+        analyResult.setCount(12343440L);
+        analyResult.setInfo("广东");
+        list.add(analyResult);
+        analyResult = new AnalyResult();
+        analyResult.setCount(123440L);
+        analyResult.setInfo("上海");
+        list.add(analyResult);
+        analyResult = new AnalyResult();
+        analyResult.setCount(123440L);
+        analyResult.setInfo("北京");
+        list.add(analyResult);
+
+//        return mongoDataServiceImpl.listMongoInfoby("regionstatics");
+        return list;
+
+    }
+    @RequestMapping(value = "searcherrorlogin",method = RequestMethod.POST)
+    public List<AnalyResult> searchErrorLogin(){
+        List<AnalyResult> list = new ArrayList<>();
+        AnalyResult analyResult = new AnalyResult();
+        analyResult.setCount(223L);
+        analyResult.setInfo("异常登陆");
+        list.add(analyResult);
+//        return mongoDataServiceImpl.listMongoInfoby("errorlogin");
+        return list;
+    }
+
+
+    /**PV*/
+    @RequestMapping(value = "searchpv",method = RequestMethod.POST)
+    public List<AnalyResult> searchpv(){
+        List<AnalyResult> list = new ArrayList<>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setCount(23432L);
+        analyResult.setInfo("PV");
+        list.add(analyResult);
+//        return mongoDataServiceImpl.listMongoInfoby("pvstatics");
+        return list;
+    }
+
+    /**UV*/
+    @RequestMapping(value = "searchuv",method = RequestMethod.POST)
+    public List<AnalyResult> searchuv(){
+        List<AnalyResult> list = new ArrayList<>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setCount(23432L);
+        analyResult.setInfo("UV");
+//        return mongoDataServiceImpl.listMongoInfoby("uvstatics");
+        list.add(analyResult);
+        return list;
+    }
+    /**热门作品*/
+    @RequestMapping(value = "searchhotwork",method = RequestMethod.POST)
+    public List<AnalyResult> searchhotwork(){
+        List<AnalyResult> list = new ArrayList<>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setInfo("王道只穿");
+        analyResult.setCount(23432L);
+        list.add(analyResult);
+
+        analyResult = new AnalyResult();
+        analyResult.setInfo("庆余年");
+        analyResult.setCount(34321L);
+        list.add(analyResult);
+//        return mongoDataServiceImpl.listMongoInfoby("hotworkstatics");
+        return list;
+    }
+    /**用户群体*/
+    @RequestMapping(value = "searchusergroup",method = RequestMethod.POST)
+    public List<AnalyResult> searchusergroup(){
+        List<AnalyResult> list = new ArrayList<>();
+        AnalyResult analyResult = new AnalyResult();
+
+        analyResult.setInfo("超人");
+        analyResult.setCount(4312234L);
+        list.add(analyResult);
+
+        analyResult = new AnalyResult();
+        analyResult.setCount(3421L);
+        analyResult.setInfo("无处");
+        list.add(analyResult);
+//        return mongoDataServiceImpl.listMongoInfoby("usergroupstatics");
+        return list;
     }
 
     /**
