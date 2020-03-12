@@ -29,7 +29,9 @@ public class DataUtils {
 
         //
         String yearbasetype = "未知";
-        if(newdateinteger >= 1950 && newdateinteger< 1960){
+        if(newdateinteger >= 1940 && newdateinteger < 1950){
+            yearbasetype = "40后";
+        }else if(newdateinteger >= 1950 && newdateinteger< 1960){
             yearbasetype = "50后";
         }else if(newdateinteger >= 1960 && newdateinteger< 1970) {
             yearbasetype = "60后";

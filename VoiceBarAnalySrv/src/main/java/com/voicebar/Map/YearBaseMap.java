@@ -27,9 +27,7 @@ public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
        if(StringUtils.isBlank(value)){
            return null;
        }
-       System.out.print(value);
        String[] userinfos = value.split(",");
-        System.out.println("   "+userinfos.length);
 
         String userId = userinfos[0];//用户id
        String username = userinfos[1];//用户名
@@ -51,6 +49,7 @@ public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
         String groupfield = "yearbase=="+yearbasetype;
         yearBaseEntity.setYeartype(yearbasetype);
         yearBaseEntity.setCount(1L);
+        if(yearbasetype!=null) System.out.println(userId + " " +yearbasetype); else System.out.println(userId + " null ");
         yearBaseEntity.setGroupfield(groupfield);
         return yearBaseEntity;
     }

@@ -9,10 +9,11 @@ public class YearBaseReduce implements ReduceFunction<YearBaseEntity> {
         String yeartype = value1.getYeartype();
         Long count1 = value1.getCount();
         Long count2 = value2.getCount();
-
+        System.out.print(value1);
         YearBaseEntity finalyyearBase = new YearBaseEntity();
         finalyyearBase.setCount(count1+count2);
         finalyyearBase.setYeartype(yeartype);
+        finalyyearBase.setGroupfield(value1.groupfield);
         return finalyyearBase;
     }
 }

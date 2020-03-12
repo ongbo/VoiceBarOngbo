@@ -2,55 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc54d00-932d-4f66-bacb-33c90fac2a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/RegionInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/RegionMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/RegionReduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Sink/KafkaRealTimeSink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/RegionTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/META-INF/VoiceBarAnalySrv.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/HotwindowEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/HotworkEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/RegionInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/DubLIkeStyleMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/HotWorkMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/RegionMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/DubLikeReduce.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/DubLikeStyleReduce.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/HotWorkAggregate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/HotWorkProcess.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/HotWorkWindowFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/RegionReduce.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Sink/KafkaRealTimeSink.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Sink/ThemeLikeSink.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/TFIDF/TFIDFAnlyJava.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/IKUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/MapUtils$MapValueComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/MapUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/voiceinfo$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/voiceinfo$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/voiceinfo$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/voiceinfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeStyleRealTimeTask$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeStyleRealTimeTask$CustomWatermarkExtractor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeStyleRealTimeTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/HorWorkTask$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/HorWorkTask$WorkWatermarkExtractor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/HorWorkTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/RegionTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/StyleRealTimeTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/YearBaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/YearBaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/DubLike.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/DubLike.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/KafkaEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/KafkaEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/DubLikeMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/DubLikeMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/YearBaseReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/YearBaseReduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/YearBaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Entity/YearBaseEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/YearBaseMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Map/YearBaseMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/MapUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/MapUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeRealTimeTask$CustomWatermarkExtractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeRealTimeTask$CustomWatermarkExtractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeRealTimeTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/DubLikeRealTimeTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/UserGroupTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/UserGroupTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/YearBaseTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/task/YearBaseTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/YearBaseReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Reduce/YearBaseReduce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/DataUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarAnalySrv/target/classes/com/voicebar/Util/DataUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoiceBarSearchInfo/target/classes/com/voicebar/search/control/MongoDataControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/VoiceBarSearchInfo/target/classes/com/voicebar/search/control/MongoDataControl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,91 +34,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/DubLikeMap.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="298">
+              <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/SexPreTask.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/StartupMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="252">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/voicebarViewService/src/main/java/com/voicebar/StartupMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/voicebar.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java">
+        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/service/MongoDataServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/HbaseUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1304">
-              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/SexPreMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/StyleRealTimeTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -191,9 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/KmeansFinalusergroupMap.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/IKUtil.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/TFIDF/TFIDFAnlyJava.java" />
         <option value="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/base/BaseMongo.java" />
         <option value="$PROJECT_DIR$/voicebarViewService/src/main/java/com/voicebar/StartupMain.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/MapUtils.java" />
@@ -232,7 +147,6 @@
         <option value="$PROJECT_DIR$/voicebarViewService/src/main/java/com/voicebar/controller/MongoDataViewControl.java" />
         <option value="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/HbaseDataControl.java" />
         <option value="$PROJECT_DIR$/voicebarViewService/src/main/java/com/voicebar/service/MongoDataService.java" />
-        <option value="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/RegionTask.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/RegionInfo.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/RegionMap.java" />
@@ -240,8 +154,12 @@
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/RegionTask.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Sink/KafkaRealTimeSink.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java" />
-        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java" />
         <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/YearBaseEntity.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/YearBaseReduce.java" />
+        <option value="$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java" />
+        <option value="$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java" />
       </list>
     </option>
   </component>
@@ -261,8 +179,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="209" />
-    <option name="y" value="61" />
+    <option name="x" value="152" />
+    <option name="y" value="58" />
     <option name="width" value="1684" />
     <option name="height" value="896" />
   </component>
@@ -272,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,25 +201,25 @@
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -308,7 +227,7 @@
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -317,7 +236,63 @@
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="VoiceBarAnalySrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebar" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -327,31 +302,13 @@
             <path>
               <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="voicebar" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VoiceBarOngbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VoiceBarOngbo" type="462c0819:PsiDirectoryNode" />
-              <item name="VoiceBarSearchInfo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="voicebar" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
+              <item name="voicebarViewService" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -399,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.yearbase">
+  <component name="RunManager" selected="Spring Boot.StartupMain (2)">
     <configuration name="DataUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.voicebar.Util.DataUtils" />
       <module name="VoiceBarAnalySrv" />
@@ -474,12 +431,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.yearbase" />
       <item itemvalue="Application.DataUtils" />
       <item itemvalue="Application.ikTest" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.StartupMain (1)" />
       <item itemvalue="Spring Boot.StartupMain (2)" />
-      <item itemvalue="Application.yearbase" />
     </list>
     <recent_temporary>
       <list>
@@ -506,7 +463,8 @@
       <workItem from="1583634686729" duration="13437000" />
       <workItem from="1583716290596" duration="22368000" />
       <workItem from="1583803897497" duration="28286000" />
-      <workItem from="1583890754985" duration="17639000" />
+      <workItem from="1583890754985" duration="18369000" />
+      <workItem from="1583978273841" duration="1400000" />
     </task>
     <task id="LOCAL-00001" summary="log with kafka and flume">
       <created>1583589043544</created>
@@ -606,11 +564,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583896304036</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="nterface success with Vue.js">
+      <created>1583938610420</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583938610420</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106132000" />
+    <option name="totallyTimeSpent" value="108262000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,9 +587,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="61" width="1684" height="896" extended-state="0" />
+    <frame x="152" y="58" width="1684" height="896" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19671133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3093788" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -643,7 +608,7 @@
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.25722983" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.2761194" />
+      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.27114427" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
@@ -725,6 +690,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="log with kafka and flume" />
@@ -744,65 +723,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="nterface success with Vue.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/KmeansRunByUserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2733">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/HorWorkTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/CarrierReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/DubLikeReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/DubLikeStyleReduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/HotWorkAggregate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/HotWorkProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/HotWorkWindowFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/MailReduce.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -841,31 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/voicebar.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/HbaseDataControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#themelike#0;class#HbaseDataControl#0" />
-            <element signature="method#stylelike#0;class#HbaseDataControl#0" />
-            <element signature="method#languagelike#0;class#HbaseDataControl#0" />
-            <element signature="method#carrierinfo#0;class#HbaseDataControl#0" />
-            <element signature="method#emailinfo#0;class#HbaseDataControl#0" />
-            <element signature="method#sex#0;class#HbaseDataControl#0" />
-            <element signature="method#ageinfo#0;class#HbaseDataControl#0" />
-            <element signature="method#region#0;class#HbaseDataControl#0" />
-            <element signature="method#usergroupinfo#0;class#HbaseDataControl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/service/HbaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -898,13 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/service/MongoDataServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1061,17 +949,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/StyleRealTimeTask.java">
+    <entry file="jar://$USER_HOME$/Maven/Respo/org/apache/flink/flink-java/1.10.0/flink-java-1.10.0-sources.jar!/org/apache/flink/api/java/operators/UnsortedGrouping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="118">
+          <caret line="142" column="29" selection-start-line="142" selection-start-column="29" selection-end-line="142" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java">
+    <entry file="jar://$USER_HOME$/Maven/Respo/org/apache/flink/flink-java/1.10.0/flink-java-1.10.0-sources.jar!/org/apache/flink/api/java/DataSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="699" column="31" selection-start-line="699" selection-start-column="31" selection-end-line="699" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Maven/Respo/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0-sources.jar!/org/apache/flink/api/java/tuple/Tuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-303">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1082,38 +977,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java">
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Reduce/YearBaseReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/HbaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1304">
-          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="53" column="46" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+        <state relative-caret-position="294">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/YearBaseTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        <state relative-caret-position="691">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/DataUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Map/YearBaseMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Entity/YearBaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/Util/HbaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/UserGroupTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarAnalySrv/src/main/java/com/voicebar/task/StyleRealTimeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/HbaseDataControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#themelike#0;class#HbaseDataControl#0" />
+            <element signature="method#stylelike#0;class#HbaseDataControl#0" />
+            <element signature="method#languagelike#0;class#HbaseDataControl#0" />
+            <element signature="method#carrierinfo#0;class#HbaseDataControl#0" />
+            <element signature="method#emailinfo#0;class#HbaseDataControl#0" />
+            <element signature="method#sex#0;class#HbaseDataControl#0" />
+            <element signature="method#ageinfo#0;class#HbaseDataControl#0" />
+            <element signature="method#region#0;class#HbaseDataControl#0" />
+            <element signature="method#usergroupinfo#0;class#HbaseDataControl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarRegisterCenter/src/main/java/com.voicebar.service/EurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/control/MongoDataControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/StartupMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/voicebarViewService/src/main/java/com/voicebar/StartupMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/resources/voicebar.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VoiceBarSearchInfo/src/main/java/com/voicebar/search/service/MongoDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>

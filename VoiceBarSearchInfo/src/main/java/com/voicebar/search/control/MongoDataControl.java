@@ -36,40 +36,40 @@ public class MongoDataControl {
         List<AnalyResult> list = new ArrayList<AnalyResult>();
         AnalyResult analyResult = new AnalyResult();
         //40年代，50年代，60年代，70年代，80年代，90年代，00年代 10后
-        analyResult.setCount(50l);
-        analyResult.setInfo("40年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(60l);
-        analyResult.setInfo("50年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(100l);
-        analyResult.setInfo("60年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(90l);
-        analyResult.setInfo("70年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(500l);
-        analyResult.setInfo("80年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(600l);
-        analyResult.setInfo("90年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(300l);
-        analyResult.setInfo("00年代");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(70l);
-        analyResult.setInfo("10后");
-
-        list.add(analyResult);
-
-        return list;
+//        analyResult.setCount(50l);
+//        analyResult.setInfo("40年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(60l);
+//        analyResult.setInfo("50年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(100l);
+//        analyResult.setInfo("60年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(90l);
+//        analyResult.setInfo("70年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(500l);
+//        analyResult.setInfo("80年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(600l);
+//        analyResult.setInfo("90年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(300l);
+//        analyResult.setInfo("00年代");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(70l);
+//        analyResult.setInfo("10后");
+//
+//        list.add(analyResult);
+//
+//        return list;
         /**
          * 50年代
          * 60年代
@@ -80,7 +80,7 @@ public class MongoDataControl {
          * 10年代
          * */
 //        analyResult.setCount(50L);
-//        return mongoDataServiceImpl.listMongoInfoby("voiceportrait","yearbasestatics");
+        return mongoDataServiceImpl.listMongoInfoby("voiceportrait","yearbasestatics");
     }
 
     /**
