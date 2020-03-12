@@ -15,12 +15,12 @@ public class MailMap implements MapFunction<String, mailInfo> {
 
         String userId = userinfos[0];
         String username = userinfos[1];
-        String sex = userinfos[2];
-        String telphone = userinfos[3];
-        String email = userinfos[4];
-        String age = userinfos[5];
-        String registerTime = userinfos[6];
-        String userprovince = userinfos[7];
+        String sex = userinfos[3];
+        String telphone = userinfos[4];
+        String email = userinfos[5];
+        String age = userinfos[6];
+        String userprovince = userinfos[7];//用户所在地区
+        String registerTime = userinfos[8];//用户注册时间
 
         String mailtype = MailUtil.getEmailtypeBy(email);
 

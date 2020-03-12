@@ -35,8 +35,8 @@ public class YearBaseMap implements MapFunction<String, YearBaseEntity> {
        String telphone = userinfos[4];//用户手机号
        String email = userinfos[5];//用户邮箱
        String age = userinfos[6];//用户年龄
-       String registerTime = userinfos[7];//用户注册时间
-       String userprovince = userinfos[8];//用户所在地区
+        String userprovince = userinfos[7];//用户所在地区
+        String registerTime = userinfos[8];//用户注册时间
 
        String yearbasetype = DataUtils.getYearbaseByAge(age);
        String tablename = "userflaginfo";

@@ -13,6 +13,7 @@ public class CarrierReduce implements ReduceFunction<CarrierInfo> {
         CarrierInfo carrierInfofinal = new CarrierInfo();
         carrierInfofinal.setCarrier(carrier);
         carrierInfofinal.setCount(count1+count2);
+        carrierInfofinal.setGroupfield(value1.getGroupfield());
         return carrierInfofinal;
     }
 }

@@ -46,7 +46,7 @@ public class RegionTask {
                     Long total = countpre + count;
                     document.put("count",total);
                 }
-                MongoUtil.saveorupdatemongo("yearbasestatics","voiceportrait",document);
+                MongoUtil.saveorupdatemongo("regionstatics","voiceportrait",document);
 
 
             }

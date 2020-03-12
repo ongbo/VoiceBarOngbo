@@ -89,30 +89,30 @@ public class MongoDataControl {
     @RequestMapping(value = "searchCarrier",method = RequestMethod.POST)
     public List<AnalyResult> searchCarrier(){
         //联通 移动 电信 其他
-        List<AnalyResult> list = new ArrayList<AnalyResult>();
-        AnalyResult analyResult = new AnalyResult();
-
-        analyResult.setCount(1350l);
-        analyResult.setInfo("联通");
-        list.add(analyResult);
-
-        analyResult = new AnalyResult();
-        analyResult.setCount(1560l);
-        analyResult.setInfo("移动");
-        list.add(analyResult);
-
-        analyResult = new AnalyResult();
-        analyResult.setCount(560l);
-        analyResult.setInfo("电信");
-        list.add(analyResult);
-
-        analyResult = new AnalyResult();
-        analyResult.setCount(4560l);
-        analyResult.setInfo("其他");
-        list.add(analyResult);
-
-        return list;
-//        return mongoDataServiceImpl.listMongoInfoby("carrierstatics");
+//        List<AnalyResult> list = new ArrayList<AnalyResult>();
+//        AnalyResult analyResult = new AnalyResult();
+//
+//        analyResult.setCount(1350l);
+//        analyResult.setInfo("联通");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(1560l);
+//        analyResult.setInfo("移动");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(560l);
+//        analyResult.setInfo("电信");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(4560l);
+//        analyResult.setInfo("其他");
+//        list.add(analyResult);
+//
+//        return list;
+        return mongoDataServiceImpl.listMongoInfoby("voiceportrait","carrierstatics");
 
     }
 
@@ -124,28 +124,28 @@ public class MongoDataControl {
         List<AnalyResult> list = new ArrayList<AnalyResult>();
         AnalyResult analyResult = new AnalyResult();
         //qq邮箱，139邮箱，网易邮箱,阿里邮箱
-        analyResult.setCount(150l);
-        analyResult.setInfo("qq邮箱");
-        list.add(analyResult);
+//        analyResult.setCount(150l);
+//        analyResult.setInfo("qq邮箱");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(60l);
+//        analyResult.setInfo("139邮箱");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(240l);
+//        analyResult.setInfo("网易邮箱");
+//        list.add(analyResult);
+//
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(540l);
+//        analyResult.setInfo("阿里邮箱");
+//        list.add(analyResult);
+//
+//        return list;
 
-        analyResult = new AnalyResult();
-        analyResult.setCount(60l);
-        analyResult.setInfo("139邮箱");
-        list.add(analyResult);
-
-        analyResult = new AnalyResult();
-        analyResult.setCount(240l);
-        analyResult.setInfo("网易邮箱");
-        list.add(analyResult);
-
-        analyResult = new AnalyResult();
-        analyResult.setCount(540l);
-        analyResult.setInfo("阿里邮箱");
-        list.add(analyResult);
-
-        return list;
-
-//        return mongoDataServiceImpl.listMongoInfoby("emailstatics");
+        return mongoDataServiceImpl.listMongoInfoby("voiceportrait","emailstatics");
     }
 
     /**
@@ -251,27 +251,27 @@ public class MongoDataControl {
     /**地区*/
     @RequestMapping(value = "searchregion",method = RequestMethod.POST)
     public List<AnalyResult> searchRegion(){
-        List<AnalyResult> list = new ArrayList<AnalyResult>();
-        AnalyResult analyResult = new AnalyResult();
+//        List<AnalyResult> list = new ArrayList<AnalyResult>();
+//        AnalyResult analyResult = new AnalyResult();
+//
+//        analyResult.setCount(123440L);
+//        analyResult.setInfo("湖南");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(12343440L);
+//        analyResult.setInfo("广东");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(123440L);
+//        analyResult.setInfo("上海");
+//        list.add(analyResult);
+//        analyResult = new AnalyResult();
+//        analyResult.setCount(123440L);
+//        analyResult.setInfo("北京");
+//        list.add(analyResult);
 
-        analyResult.setCount(123440L);
-        analyResult.setInfo("湖南");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(12343440L);
-        analyResult.setInfo("广东");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(123440L);
-        analyResult.setInfo("上海");
-        list.add(analyResult);
-        analyResult = new AnalyResult();
-        analyResult.setCount(123440L);
-        analyResult.setInfo("北京");
-        list.add(analyResult);
-
-//        return mongoDataServiceImpl.listMongoInfoby("regionstatics");
-        return list;
+        return mongoDataServiceImpl.listMongoInfoby("voiceportrait","regionstatics");
+//        return list;
 
     }
     @RequestMapping(value = "searcherrorlogin",method = RequestMethod.POST)

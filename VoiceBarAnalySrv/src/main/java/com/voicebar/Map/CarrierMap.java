@@ -18,12 +18,12 @@ public class CarrierMap implements MapFunction<String, CarrierInfo> {
 
         String userId = userinfos[0];
         String username = userinfos[1];
-        String sex = userinfos[2];
-        String telphone = userinfos[3];
-        String email = userinfos[4];
-        String age = userinfos[5];
-        String registerTime = userinfos[6];
-        String userprovince = userinfos[7];
+        String sex = userinfos[3];
+        String telphone = userinfos[4];
+        String email = userinfos[5];
+        String age = userinfos[6];
+        String registerTime = userinfos[7];
+        String userprovince = userinfos[8];
 
         int carriertype = CarrierUtil.getCarrierByTel(telphone);
         String carriertypestring = carriertype==0?"未知运营商":carriertype==1?"移动用户":carriertype==2?"联通用户":"电信用户";

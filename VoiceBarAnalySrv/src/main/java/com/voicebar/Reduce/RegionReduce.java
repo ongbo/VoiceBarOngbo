@@ -8,6 +8,7 @@ public class RegionReduce implements ReduceFunction<RegionInfo> {
        RegionInfo regionInfo = new RegionInfo();
        regionInfo.setRegionname(value1.getRegionname());
        regionInfo.setCount(value1.getCount()+value2.getCount());
+       regionInfo.setGroupfield(value1.getGroupfield());
        return regionInfo;
     }
 }

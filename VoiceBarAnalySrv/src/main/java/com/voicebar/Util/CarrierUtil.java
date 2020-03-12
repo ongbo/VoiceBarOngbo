@@ -1,5 +1,6 @@
 package com.voicebar.Util;
 
+import java.util.Random;
 import java.util.regex.Pattern;
 
 /**
@@ -31,19 +32,21 @@ public class CarrierUtil {
      * @return
      */
     public static int getCarrierByTel(String telphone){
-        boolean b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_MOBILE_PATTERN, telphone);
-        if (b1) {
-            return 1;
-        }
-        b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_UNICOM_PATTERN, telphone);
-        if (b1) {
-            return 2;
-        }
-        b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_TELECOM_PATTERN, telphone);
-        if (b1) {
-            return 3;
-        }
-        return 0;
+//        boolean b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_MOBILE_PATTERN, telphone);
+//        if (b1) {
+//            return 1;
+//        }
+//        b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_UNICOM_PATTERN, telphone);
+//        if (b1) {
+//            return 2;
+//        }
+//        b1 = telphone == null || telphone.trim().equals("") ? false : match(CHINA_TELECOM_PATTERN, telphone);
+//        if (b1) {
+//            return 3;
+//        }
+//        return 0;
+        Random random = new Random();
+        return random.nextInt(3)+1;
     }
 
 

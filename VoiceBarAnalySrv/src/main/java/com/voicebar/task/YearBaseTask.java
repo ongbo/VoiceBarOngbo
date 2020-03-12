@@ -35,8 +35,8 @@ public class YearBaseTask {
         env.getConfig().setGlobalJobParameters(params);
 
         //获取输入的数据
-//        DataSet<String> text = env.readTextFile(params.get("input"));
-        DataSet<String> text = env.readTextFile("/Users/ongbo/JarPackage/hadoop/hadoop-2.7.7/userinfoRegisterinfo.log");
+        DataSet<String> text = env.readTextFile(params.get("input"));
+//        DataSet<String> text = env.readTextFile("/Users/ongbo/JarPackage/hadoop/hadoop-2.7.7/userinfoRegisterinfo.log");
         DataSet<YearBaseEntity> mapresult = text.map(new YearBaseMap());
         DataSet<YearBaseEntity> reduceresult = mapresult.groupBy("groupfield").reduce(new YearBaseReduce());
         try {

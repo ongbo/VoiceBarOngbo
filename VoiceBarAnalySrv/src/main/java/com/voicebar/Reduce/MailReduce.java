@@ -12,6 +12,7 @@ public class MailReduce implements ReduceFunction<mailInfo> {
        mailInfo mailInfo = new mailInfo();
        mailInfo.setEmailtype(mailtype);
        mailInfo.setCount(count1+count2);
+       mailInfo.setGroupfield(value1.getGroupfield());
        return mailInfo;
     }
 }
